@@ -8,10 +8,23 @@ font-family: 'Lora', serif;
 /* #FCDCD0
 #CAE7E2
 #E8DAEB
-#E0F2F6 */  
+#E0F2F6 */
 }
-ul{
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
- }
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    margin: none;
+    border: none;
+    background-color: #000;
+}
