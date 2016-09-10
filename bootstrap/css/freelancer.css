@@ -13,11 +13,8 @@ p {
 p.small {
   font-size: 16px;
 }
-a,
-a:hover,
-a:focus,
-a:active,
-a.active {
+a
+ {
   color: #18BC9C;
   outline: none;
 }
