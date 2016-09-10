@@ -1,0 +1,106 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Health to Go</title>
+</head>
+<body>
+
+<p>A code element is displayed like this:</p>
+
+
+<p>stuff here</p>
+
+</body>
+</html> -->
+
+
+<!doctype html>
+<html>
+	<title>Empower Your Shower</title>
+	<head>
+		<link href="http://fonts.googleapis.com/css?family=Quicksand|Lobster|Crete+Round|Oswald|Slabo+27px|Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/png" href="showerfav.png">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+
+
+<script type = "text/javascript">
+	$(window).on("load",function() {
+    function fade(pageLoad) {
+        var min = 0.08;
+        var max = 1.0;
+        var threshold = 0.01;
+        $('.fade').each(function() {
+            /* Check the location of each desired element */
+            var objectBottom = $(this).offset().top + $(this).outerHeight();
+            var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+
+            /* If the object is completely visible in the window, fade it in */
+            if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                if ($(this).css('opacity')<=min+threshold || pageLoad) {$(this).fadeTo(500,max);}
+            } else { //object goes out of view (scrolling up)
+                if ($(this).css('opacity')>=max-threshold || pageLoad) {$(this).fadeTo(200,min);}
+            }
+        });
+    }
+    fade(true); //fade elements during page-load
+    $(window).scroll(function() {fade(false);}); //fade elements during scroll
+});
+</script>
+
+</head>
+	<div class="navbar">
+ 	<ul>
+ 		<li class="navbar"> <a href="about.html"> Citations</a>
+        </li>
+        <li class="navbar"> <a href="solution.html"> The Solution</a>
+        </li>
+        <li class="navbar"> <a href="problem.html"> The Problem</a>
+        </li>
+    </ul>
+
+        <div class="navhome">
+                <a href="robot.html">Empower Your Shower</a>
+        </div>
+	</div>
+
+<br>
+<div class="topsmall"> <b>The Problem </b></div>
+<br>
+<p class="bodytext">Take preventative measures against the serious level of water scarcity directly due to household wastage. The idea is to help conservation efforts by combining software and speaker hardware technologies to make average water consumers more aware of their wasteful showering habits.</p>
+<br>
+
+<!-- the stats -->
+<p class="bodyhead1"><b> &nbsp &nbsp &nbspThe Facts & Statistics </b></p>
+
+ <a href= "waterinfographic.jpg" target="_blank"><img class="reg" src="waterinfographic.jpg" align="left"></a>
+
+<!-- This is the text that should be hidden until scrolled to -->
+
+<p class="bodytext fade">More than 1.2 billion people lack access to clean drinking water and affects people on every continent. </p>
+<br><br>
+<p class="bodytext fade">Water scarcity is both a natural and a human-made phenomenon. There is enough freshwater on the planet for 7 billion people but it is distributed unevenly and too much of it is wasted, polluted and unsustainably managed. </p>
+<br><br>
+<p class="bodytext fade">Approximately 3.5 million people die every year due to lack of clean water, sanitation, and good hygiene.</p>
+<br><br>
+<p class="bodytext fade">Access to clean water for basic hygiene could save the lives of 1.5 million children a year.</p>
+<br><br>
+<p class="bodytext fade">In Africa, women are responsible for fetching water and wood resources. Each day, women and children spend an average of 6 hours walking for clean water for a total of 40 million hours a year.</p>
+<br><br>
+<p class="bodytext fade">Over 90% of wastewater in developing countries is discharged untreated directly into rivers, lakes, and oceans and threatens health, food security, and access to safe bathing and drinking water.</p>
+<br><br>
+<p class="bodytext fade">Industries dump an estimated 300-400 metric tons of polluted waste into water sources every year.</p>
+<br><br>
+<p class="bodytext fade">Freshwater makes up only 3% over the Earth's water and two-thirds of that is frozen in glaciers and unaccessible. This small amount of water must serve Earth's human population and 10% of the world's species. In the last 40 years, 60% of these species are in decline.</p>
+<br><br>
+<p class="bodytext fade">More than 11 million people have died due to drought in the last century alone.</p>
+<br><br>
+<p class="bodytext fade">A 5 minute shower can use 25-50 gallons of water. A low-flow showerhead can help reduce water usage by about 40 percent.</p>
+<br><br>
+<p class="bodytext fade">At the current consumption rate, by 2025 two-thirds of the population may face water shortages and ecosystems around the world will suffer even more.</p>
+</div>
+</body>
+</html>
