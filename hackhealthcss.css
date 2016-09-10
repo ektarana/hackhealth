@@ -3,5 +3,14 @@ body{
 
 }
 p{
-  
+font-family: 'Lora', serif;
+/* #FCDCD0
+#CAE7E2
+#E8DAEB
+#E0F2F6 */  
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;}
 }
