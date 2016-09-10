@@ -23,8 +23,9 @@ li {
 
 li a {
     display: block;
-    padding: 8px;
+
     margin: none;
     border: none;
+    padding: 8px;
     background-color: #000;
 }
